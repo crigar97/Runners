@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  <header class="header">
+    <a href="./index.html" class="header__logo">RUNNERS</a>
+    <nav class="nav">
+      <a href="./index.html" class="nav__item">Inicio</a>
+      <a href="#" class="nav__item">Noticias</a>
+      <a href="#" class="nav__item">Calendario</a>
+      <a href="#" class="nav__item">Comunicados</a>
+      <a href="#" class="nav__item">Nosotros</a>
+      <a href="./log-in.html" class="nav__log-in">Iniciar Sesión</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="next-races">
+      <h1 class="next-races__title">Próximas Carreras</h1>
+      <!-- Carrera Bonafont -->
+      <div class="race">
+        <img src="./../img/bonafont-race.jpg" alt="Portada de carrera" class="race__logo">
+        <div class="race__info">
+          <h2 class="race__title">Carrera Bonafont 2020</h2>
+          <span class="race__location"><img src="./../img/icons/location-icon.png" alt="Icono de ubicación">Ciudad de Puebla, Puebla</span>
+          <span class="race__date"><img src="./../img/icons/date-icon.png" alt="Icono de fecha">30 de Agosto, 2020</span>
+          <span class="race__time"><img src="./../img/icons/time-icon.png" alt="Icono de hora">09:00 hrs.</span>
+          <span class="race__restriction"><img src="./../img/icons/people-icon.png" alt="Icono de fecha">Abierta solo para mujeres</span>
+          <a href="#" class="race__go-announcement">Ver Convocatoria</a>
+        </div>
+      </div>
+      <!-- Carrera Kardias -->
+      <div class="race">
+        <img src="./../img/kardias-race.jpg" alt="Portada de carrera" class="race__logo">
+        <div class="race__info">
+          <h2 class="race__title">Carrera Kardias | Por el corazón de México</h2>
+          <span class="race__location"><img src="./../img/icons/location-icon.png" alt="Icono de ubicación">Paseo de la Reforma</span>
+          <span class="race__date"><img src="./../img/icons/date-icon.png" alt="Icono de fecha">2 de Septiembre, 2020</span>
+          <span class="race__time"><img src="./../img/icons/time-icon.png" alt="Icono de hora">08:00 hrs.</span>
+          <span class="race__restriction"><img src="./../img/icons/people-icon.png" alt="Icono de fecha">Abierta para todo el público</span>
+          <a href="#" class="race__go-announcement">Ver Convocatoria</a>
+        </div>
+      </div>
+      <!-- Carrera Telcel -->
+      <div class="race">
+        <img src="./../img/telcel-race.jpg" alt="Portada de carrera" class="race__logo">
+        <div class="race__info">
+          <h2 class="race__title">Carrera Telcel</h2>
+          <span class="race__location"><img src="./../img/icons/location-icon.png" alt="Icono de ubicación">Atlixco, Puebla</span>
+          <span class="race__date"><img src="./../img/icons/date-icon.png" alt="Icono de fecha">17 de Septiembre, 2020</span>
+          <span class="race__time"><img src="./../img/icons/time-icon.png" alt="Icono de hora">08:30 hrs.</span>
+          <span class="race__restriction"><img src="./../img/icons/people-icon.png" alt="Icono de fecha">Abierta para todo el público</span>
+          <a href="#" class="race__go-announcement">Ver Convocatoria</a>
+        </div>
+      </div>
+    </section>
+    <section class="register">
+      <h1 class="register__title">Registrarse</h1>
+      <form action="#">
+        <label for="register-form__name" class="register__label">
+          <input type="text" id="register-form__name" placeholder="Nombre">
+        </label>
+        <label for="register-form__email" class="register__label">
+          <input type="email" id="register-form__email" placeholder="Correo Electrónico">
+        </label>
+        <label for="register-form__password" class="register__label">
+          <input type="password" id="register-form__password" placeholder="Contraseña">
+        </label>
+        <label for="register-form__terms" class="register__terms">
+          <input type="checkbox" id="register-form__terms">
+          <span>Acepto los <a href="#" target="blank">Términos y Condiciones</a> de Runners</span>
+        </label>
+        <input type="submit" value="Registrarse" class="register__sign-in">
+      </form>
+      <p class="register__description">¡Recibe notificaciones de las próximas carreras! Registrate y recibe emails acerca de noticias, comunicados e información.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h2 class="footer__copyright">® RUNNERS 2020</h2>
+  </footer>
+</body>
+</html>

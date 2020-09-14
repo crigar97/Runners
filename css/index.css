@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #ACF315;
+  --dark-primary-color: #74a014;
+  --font-1: 'Oswald', sans-serif;;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  background-color: var(--primary-color);
+}
+.header__logo {
+  padding: 0 2rem;
+  text-decoration: none;
+  font-family: var(--font-1);
+  font-weight: bold;
+  font-size: 3rem;
+  border: .5rem solid white;
+  color: white;
+}
+
+.nav__item {
+  margin-right: 3rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  font-family: var(--font-1);
+  font-size: 2rem;
+  color: white;
+}
+.nav__item:hover {
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 1rem;
+}
+.nav__log-in {
+  margin-right: 3rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  background-color: white;
+  font-family: var(--font-1);
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+.nav__log-in:hover {
+  background-color: var(--dark-primary-color);
+  color: white;
+}
+
+.main {
+  display: flex;
+}
+
+.next-races {
+  padding: 3rem;
+  width: 60%;
+  background-color: var(--primary-color);
+}
+.next-races__title {
+  font-family: var(--font-1);
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.race {
+  display: flex;
+  margin: 3rem 0;
+  padding: 2rem;
+  width: 0 auto;
+  height: 24rem;
+  background-color: white;
+}
+.race__logo {
+  width: 20rem;
+  height: 20rem;
+}
+.race__info {
+  margin-left: 2rem;
+  width: 100%;
+}
+.race__title {
+  padding-bottom: 1rem;
+  font-family: var(--font-1);
+  font-size: 2.5rem;
+  border-bottom: .1rem solid var(--primary-color);
+}
+.race__location {
+  display: block;
+  margin-top: 2rem;
+  font-family: var(--font-1);
+  font-size: 1.5rem;
+}
+.race__date {
+  display: block;
+  font-family: var(--font-1);
+  font-size: 1.5rem;
+}
+.race__time {
+  display: block;
+  font-family: var(--font-1);
+  font-style: italic;
+  font-size: 1.5rem;
+}
+.race__restriction {
+  display: block;
+  margin-top: 1rem;
+  font-family: var(--font-1);
+  font-size: 1.5rem;
+}
+.race__location > img,
+.race__date > img,
+.race__time > img,
+.race__restriction > img {
+  margin-right: 1rem;
+}
+.race__go-announcement {
+  float: right;
+  padding: .5rem 1rem;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--font-1);
+  font-size: 1.5rem;
+  color: white;
+}
+.race__go-announcement:hover {
+  background-color: var(--dark-primary-color);
+}
+
+.register {
+  padding: 3rem;
+  width: 40%;
+}
+.register__title {
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  font-family: var(--font-1);
+  font-size: 3.5rem;
+  color: var(--primary-color);
+}
+.register__label {
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+}
+.register__label > input {
+  padding-left: 2rem;
+  width: 100%;
+  height: 5rem;
+  font-family: var(--font-1);
+  font-size: 2rem;
+}
+.register__terms {
+  margin: 2rem 0;
+}
+.register__terms > span {
+  margin-left: .5rem;
+  font-family: var(--font-1);
+  font-size: 1.5rem;
+}
+.register__sign-in {
+  margin-top: 2rem;
+  width: 100%;
+  height: 5rem;
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  font-family: var(--font-1);
+  font-size: 2rem;
+
+}
+.register__sign-in:hover {
+  background-color: var(--dark-primary-color);
+  border: 1px solid var(--dark-primary-color);
+  color: white;
+}
+.register__description {
+  margin-top: 5rem;
+  font-family: var(--font-1);
+  font-size: 1.7rem;
+  text-align: justify;
+}
+
+.footer {
+  padding: 2rem;
+  background-color: black;
+  text-align: center;
+}
+.footer__copyright {
+  font-family: var(--font-1);
+  font-size: 2rem;
+  color: white;
+}

@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #ACF315;
+  --dark-primary-color: #74a014;
+  --font-1: 'Oswald', sans-serif;;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  background-color: var(--primary-color);
+}
+.header__logo {
+  padding: 0 2rem;
+  text-decoration: none;
+  font-family: var(--font-1);
+  font-weight: bold;
+  font-size: 3rem;
+  border: .5rem solid white;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__item {
+  margin-right: 3rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  font-family: var(--font-1);
+  font-size: 2rem;
+  color: white;
+}
+.nav__item:hover {
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 1rem;
+}
+.nav__user-item {
+  text-decoration: none;
+  /* border: none;
+  background-color: var(--primary-color); */
+}
+.nav__user-item > img {
+  border-radius: 2.5rem;
+}
+
+.profile {
+  display: flex;
+  margin: 8rem 3rem 0;
+  background-color: var(--primary-color);
+}
+.profile__photo {
+  position: relative;
+  left: 5rem;
+  bottom: 5rem;
+  border: .2rem solid white;
+}
+.profile__data {
+  margin-left: 10rem;
+  padding: 3rem;
+}
+.profile__name {
+  display: block;
+  font-family: var(--font-1);
+  font-size: 5rem;
+  color: white;
+}
+.profile__email {
+  display: block;
+  font-style: italic;
+  font-family: var(--font-1);
+  font-size: 3rem;
+  color: white;
+}
+
+.next-races {
+  margin-top: 3rem;
+  padding: 3rem;
+}
+.next-races__header {
+  padding-left: 1rem;
+  font-family: var(--font-1);
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  border-left: 1rem solid var(--primary-color);
+}
+
+.historical {
+  margin-top: 3rem;
+  padding: 3rem;
+}
+.historical__header {
+  padding-left: 1rem;
+  font-family: var(--font-1);
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  border-left: 1rem solid var(--primary-color);
+}
+
+.statistics{
+  margin-left: 5rem;
+}
+.statistics__item {
+  display: flex;
+  margin: 5rem 0;
+  align-items: center;
+  font-family: var(--font-1);
+  font-size: 2.5rem;
+}
+.statistics__item > img {
+  margin-right: 2rem;
+}
+.highlight {
+  margin: 0 .5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.footer {
+  padding: 2rem;
+  background-color: black;
+  text-align: center;
+}
+.footer__copyright {
+  font-family: var(--font-1);
+  font-size: 2rem;
+  color: white;
+}
