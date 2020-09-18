@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #ACF315;
+  --dark-primary-color: #74a014;
+  --font-1: 'Oswald', sans-serif;;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  background-color: var(--primary-color);
+}
+.header__logo {
+  padding: 0 2rem;
+  text-decoration: none;
+  font-family: var(--font-1);
+  font-weight: bold;
+  font-size: 3rem;
+  border: .5rem solid white;
+  color: white;
+}
+
+.nav__item {
+  margin-right: 3rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  font-family: var(--font-1);
+  font-size: 2rem;
+  color: white;
+}
+.nav__item:hover {
+  background-color: white;
+  color: var(--primary-color);
+  border-radius: 1rem;
+}
+.nav__log-in {
+  margin-right: 3rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  background-color: white;
+  font-family: var(--font-1);
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+.nav__log-in:hover {
+  background-color: var(--dark-primary-color);
+  color: white;
+}
+
+main {
+  display: flex;
+}
+.poster {
+  width: 40%;
+  height: 100vh;
+}
+.poster__image {
+  width: 100%;
+  height: 100%;
+}
+.poster__title {
+  position: absolute;
+  top: 20rem;
+  left: 3rem;
+  width: 30%;
+  font-family: var(--font-1);
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+.underlined {
+  border-bottom: 6px solid white;
+}
+
+.description {
+  width: 70%;
+  padding: 3rem 6rem 3rem;
+  background-color: var(--primary-color);
+}
+.description__title {
+  font-family: var(--font-1);
+  font-size: 5rem;
+  color: white;
+}
+.description__text {
+  margin-top: 3rem;
+  font-family: var(--font-1);
+  font-size: 3rem;
+  color: white;
+}
+.increase {
+  font-size: 4rem;
+}
+.description__signature {
+  margin-top: 3rem;
+  padding: 0 3rem;
+  text-align: right;
+  font-family: var(--font-1);
+  font-size: 2.5rem;
+  color: white;
+}
+
+.footer {
+  padding: 2rem;
+  background-color: black;
+  text-align: center;
+}
+.footer__copyright {
+  font-family: var(--font-1);
+  font-size: 2rem;
+  color: white;
+}
