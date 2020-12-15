@@ -16,145 +16,193 @@
       <a href="./../index.html" class="nav__item">Inicio</a>
       <a href="#" class="nav__item">Noticias</a>
       <a href="./calendar.html" class="nav__item">Calendario</a>
-      <a href="#" class="nav__item">Comunicados</a>
+      <a href="./announcements.html" class="nav__item">Comunicados</a>
       <a href="./about-us.html" class="nav__item">Nosotros</a>
       <a href="./log-in.html" class="nav__log-in">Iniciar Sesión</a>
     </nav>
   </header>
 
   <main>
-    <section class="date">
-      <span class="date__month">
-        <button class="previous-month"><img src="./../img/icons/back-icon.png" alt="Icono de mes anterior"></button>
-        Septiembre
-        <button class="next-month"><img src="./../img/icons/next-icon.png" alt="Icono de siguiente mes"></button>
-      </span>
-      <span class="date__year">2<span class="underlined">020</span></span>
-    </section>
+    <h1 class="page-title">Calendario Oficial</h1>
     <section class="calendar">
-      <table>
-        <thead>
-          <tr>
-            <th class="calendar__weekday-box">Domingo</th>
-            <th class="calendar__weekday-box">Lunes</th>
-            <th class="calendar__weekday-box">Martes</th>
-            <th class="calendar__weekday-box">Miércoles</th>
-            <th class="calendar__weekday-box">Jueves</th>
-            <th class="calendar__weekday-box">Viernes</th>
-            <th class="calendar__weekday-box">Sábado</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr> <!-- 30 al 5 -->
-            <td class="muted"></td>
-            <td class="muted"></td>
-            <td class="calendar__day-box">
-              1
-            </td>
-            <td class="calendar__day-box">
-              <a href="#">
-                <img src="./../img/icons/finish-flag-icon.png" alt="Ícono de bandera">Telcel
-              </a>
-              2
-            </td>
-            <td class="calendar__day-box">
-              3
-            </td>
-            <td class="calendar__day-box">
-              4
-            </td>
-            <td class="calendar__day-box">
-              5
-            </td>
-          </tr>
-          <tr> <!-- 6 al 12 -->
-            <td class="calendar__day-box">
-              6
-            </td>
-            <td class="calendar__day-box">
-              7
-            </td>
-            <td class="calendar__day-box">
-              8
-            </td>
-            <td class="calendar__day-box">
-              9
-            </td>
-            <td class="calendar__day-box">
-              10
-            </td>
-            <td class="calendar__day-box">
-              11
-            </td>
-            <td class="calendar__day-box">
-              12
-            </td>
-          </tr>
-          <tr> <!-- 13 al 19 -->
-            <td class="calendar__day-box">
-              13
-            </td>
-            <td class="calendar__day-box">
-              14
-            </td>
-            <td class="calendar__day-box">
-              15
-            </td>
-            <td class="calendar__day-box">
-              16
-            </td>
-            <td class="calendar__day-box">
-              17
-            </td>
-            <td class="calendar__day-box">
-              18
-            </td>
-            <td class="calendar__day-box">
-              19
-            </td>
-          </tr>
-          <tr> <!-- 20 al 26 -->
-            <td class="calendar__day-box">
-              20
-            </td>
-            <td class="calendar__day-box">
-              21
-            </td>
-            <td class="calendar__day-box">
-              22
-            </td>
-            <td class="calendar__day-box">
-              23
-            </td>
-            <td class="calendar__day-box">
-              24
-            </td>
-            <td class="calendar__day-box">
-              25
-            </td>
-            <td class="calendar__day-box">
-              26
-            </td>
-          </tr>
-          <tr> <!-- 27 al 30 -->
-            <td class="calendar__day-box">
-              27
-            </td>
-            <td class="calendar__day-box">
-              28
-            </td>
-            <td class="calendar__day-box">
-              29
-            </td>
-            <td class="calendar__day-box">
-              30
-            </td>
-            <td class="muted"></td>
-            <td class="muted"></td>
-            <td class="muted"></td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="calendar__date">
+        <div class="calendar__date__month">
+          <button><img src="./../img/icons/back-icon.png" alt="Icono de mes anterior"></button>
+          <span>Septiembre</span>
+          <button><img src="./../img/icons/next-icon.png" alt="Icono de siguiente mes"></button>
+        </div>
+        <span class="calendar__date__year">2020</span>
+      </div>
+      <div class="calendar__table">
+        <table>
+          <thead>
+            <tr>
+              <th class="calendar__table__head-item">Domingo</th>
+              <th class="calendar__table__head-item">Lunes</th>
+              <th class="calendar__table__head-item">Martes</th>
+              <th class="calendar__table__head-item">Miércoles</th>
+              <th class="calendar__table__head-item">Jueves</th>
+              <th class="calendar__table__head-item">Viernes</th>
+              <th class="calendar__table__head-item">Sábado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="calendar__table__body-item muted"></td>
+              <td class="calendar__table__body-item muted"></td>
+              <td class="calendar__table__body-item">
+                <div class="races">
+                  <a href="#"><img src="./../img/icons/finish-flag-icon.png" alt="Icono de bandera">Carrera BBVA</a>
+                  <a href="#"><img src="./../img/icons/finish-flag-icon.png" alt="Icono de bandera">Carrera Kardias</a>
+                </div>
+                <span class="day-number">1</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">2</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"> </div>
+                <span class="day-number">3</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">4</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races">
+                  <a href="#"><img src="./../img/icons/finish-flag-icon.png" alt="Icono de bandera">Carrera BBVA</a>
+                  <a href="#"><img src="./../img/icons/finish-flag-icon.png" alt="Icono de bandera">Carrera Kardias</a>
+                </div>
+                <span class="day-number">5</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">6</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">7</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">8</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">9</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races">
+                  <a href="#"><img src="./../img/icons/finish-flag-icon.png" alt="Icono de bandera">Carrera BBVA</a>
+                  <a href="#"><img src="./../img/icons/finish-flag-icon.png" alt="Icono de bandera">Carrera Kardias</a>
+                </div>
+                <span class="day-number">10</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">11</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">12</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">13</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races">
+                  <a href="#"><img src="./../img/icons/finish-flag-icon.png" alt="Icono de bandera">Carrera BBVA</a>
+                  <a href="#"><img src="./../img/icons/finish-flag-icon.png" alt="Icono de bandera">Carrera Kardias</a>
+                </div>
+                <span class="day-number">14</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">15</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">16</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">17</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">18</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">19</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">20</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">21</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">22</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races">
+                  <a href="#"><img src="./../img/icons/finish-flag-icon.png" alt="Icono de bandera">Carrera BBVA</a>
+                  <a href="#"><img src="./../img/icons/finish-flag-icon.png" alt="Icono de bandera">Carrera Kardias</a>
+                </div>
+                <span class="day-number">23</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">24</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">25</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">26</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="calendar__table__body-item">
+                <div class="races">
+                  <a href="#"><img src="./../img/icons/finish-flag-icon.png" alt="Icono de bandera">Carrera BBVA</a>
+                  <a href="#"><img src="./../img/icons/finish-flag-icon.png" alt="Icono de bandera">Carrera Kardias</a>
+                </div>
+                <span class="day-number">27</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">28</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">29</span>
+              </td>
+              <td class="calendar__table__body-item">
+                <div class="races"></div>
+                <span class="day-number">30</span>
+              </td>
+              <td class="calendar__table__body-item muted"></td>
+              <td class="calendar__table__body-item muted"></td>
+              <td class="calendar__table__body-item muted"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   </main>
 

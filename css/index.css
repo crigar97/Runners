@@ -5,12 +5,13 @@
 }
 html {
   font-size: 62.5%;
+  font-family: var(--font-1);
 }
 
 :root {
   --primary-color: #ACF315;
   --dark-primary-color: #74a014;
-  --font-1: 'Oswald', sans-serif;;
+  --font-1: 'Oswald', sans-serif;
 }
 
 .header {
@@ -66,10 +67,13 @@ html {
   width: 60%;
   background-color: var(--primary-color);
 }
-.next-races__title {
-  font-family: var(--font-1);
-  text-transform: uppercase;
+
+.page-title {
   font-size: 3.5rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.cl-white {
   color: white;
 }
 

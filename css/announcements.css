@@ -1,7 +1,7 @@
 :root {
   --primary-color: #ACF315;
   --dark-primary-color: #74a014;
-  --muted-primary-color: #dff3b3;
+  --light-primary-color: #adf31593;
   --font-1: 'Oswald', sans-serif;;
 }
 * {
@@ -58,72 +58,38 @@ html {
   color: white;
 }
 
-main {
+.announcements {
   padding: 3rem;
 }
-
-.page-title {
-  font-size: 3.5rem;
+.announcements__title {
+  margin-bottom: 3rem;
   text-transform: uppercase;
+  font-size: 3.5rem;
   color: var(--primary-color);
 }
-
-.calendar {
+.announcements-table {
+  margin: 3rem auto 0;
   width: 80%;
-  margin: 3rem auto 0;
+  border-spacing: 0;
 }
-/* Barra que muestra el mes y año. */
-.calendar__date {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.calendar__date_month {
-  display: flex;
-  align-items: center;
-}
-.calendar__date__month > button {
-  background-color: white;
-  border: none;
-}
-.calendar__date__month > span {
-  font-size: 3rem;
-}
-.calendar__date__year {
-  font-size: 3rem;
-}
-/* Tabla del calendario. */
-.calendar__table > table{
-  margin: 3rem auto 0;
-}
-.calendar__table__head-item {
-  width: 10rem;
-  padding: 2rem 0; 
+.announcements-table__head-item {
+  padding: 1rem 0;
   font-size: 2.5rem;
-  font-weight: normal;
-}
-.calendar__table__body-item {
-  width: 15rem;
-  height: 15rem;
+  letter-spacing: .2rem;
+  color: white;
   background-color: var(--primary-color);
 }
-.muted {
-  background-color: var(--muted-primary-color);
+.announcements-table__body-row:hover {
+  background-color: var(--light-primary-color);
 }
-.calendar__table__body-item > .races {
-  height: 80%;
-  padding: 1rem;
-}
-.calendar__table__body-item > .races > a {
-  display: block;
-  font-size: 1.5rem;
-  color: black;
-}
-.calendar__table__body-item > .day-number {
-  float: right;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+.announcements-table__body-item {
+  padding: 1.5rem 0;
   font-size: 2rem;
+  text-align: center;
+}
+
+.link {
+  color: var(--dark-primary-color);
 }
 
 .footer {
